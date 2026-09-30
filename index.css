@@ -41,8 +41,8 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 .hero-note { left: -28px; bottom: 24px; padding: 14px 18px; background: var(--ink); color: var(--paper); border: 1px solid var(--ink); border-left: 3px solid var(--lime); box-shadow: 0 12px 28px rgba(23, 35, 29, .16); transform: none; }
 .hero-note strong { color: var(--lime); }
 @media (max-width: 600px) {
-	html { scroll-snap-type: y proximity; }
-	section { height: 100svh; min-height: 100svh; overflow-x: hidden; overflow-y: auto; }
+	html { scroll-snap-type: none; }
+	section { height: auto; min-height: 100svh; overflow: visible; scroll-snap-align: none; scroll-snap-stop: normal; }
 	nav { top: 10px; width: calc(100% - 24px); padding: 9px 12px; }
 	.logo { gap: 8px; font-size: 13px; }
 	.logo span { width: 29px; height: 29px; }
@@ -61,7 +61,7 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 	.profile-frame { padding: 8px; }
 	.hero-note { left: -20px; bottom: 16px; padding: 10px 12px; font-size: 10px; }
 	.hero-note strong { font-size: 17px; }
-	.About, .Projects, .Certificates, .Contact { height: 100svh; min-height: 100svh; padding: 78px 22px 24px; }
+	.About, .Projects, .Certificates, .Contact { height: auto; min-height: 100svh; padding: 78px 22px 24px; }
 	.About { padding: 78px 0 22px; }
 	.About-Content { grid-template-columns: minmax(0, 1fr); grid-template-rows: 170px auto; gap: 20px; align-content: start; }
 	.About .Left { display: block; grid-column: 1; position: relative; width: 100%; height: 170px; margin: 0; overflow: hidden; }
@@ -80,7 +80,7 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 	.card small { margin-bottom: 22px; }
 	.card h2 { font-size: 20px; }
 	.card p { font-size: 13px; }
-	.projects-content.see-all-active .container { display: grid; flex: 1; width: 100%; grid-template-columns: 1fr; overflow-x: hidden; overflow-y: auto; padding: 0 4px 12px 0; }
+	.projects-content.see-all-active .container { display: grid; flex: 1; width: 100%; grid-template-columns: 1fr; overflow: visible; padding: 0 4px 12px 0; }
 	.projects-content.see-all-active .card { height: auto; min-height: 190px; }
 	.image-links { width: calc(100% + 22px); gap: 12px; }
 	.image-links a { flex-basis: min(250px, 76vw); }
