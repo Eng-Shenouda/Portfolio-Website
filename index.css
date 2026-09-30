@@ -47,18 +47,18 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 	.logo span { width: 29px; height: 29px; }
 	.section-indicator { display: none; }
 	nav ul { top: calc(100% + 8px); border-radius: 4px; box-shadow: 0 12px 28px rgba(23, 35, 29, .1); }
-	.hero { min-height: 100svh; padding: 112px 22px 46px; flex-direction: column; align-items: stretch; gap: 26px; }
-	.hero-left { max-width: none; }
-	.hero-left .eyebrow { margin-bottom: 16px; }
-	.hero .title { font-size: 40px; line-height: 1.02; }
-	.hero .subtitle { margin-top: 18px; font-size: 14px; line-height: 1.65; }
-	.hero-icons { width: 100%; max-width: 350px; margin: 24px 0 22px; gap: 12px; }
+	.hero { min-height: 100svh; display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 0; padding: 96px 22px 34px; }
+	.hero-left { display: contents; max-width: none; }
+	.hero-left .eyebrow { grid-row: 1; margin-bottom: 13px; }
+	.hero .title { grid-row: 2; font-size: 40px; line-height: 1.02; }
+	.hero .subtitle { grid-row: 3; margin-top: 12px; font-size: 14px; line-height: 1.65; }
+	.hero-right { grid-row: 4; width: min(210px, 70vw); margin: 18px auto 14px; }
+	.hero-icons { grid-row: 5; width: 100%; max-width: 350px; margin: 8px 0 18px; gap: 12px; }
 	.hero-icons a { font-size: 20px; }
-	.hero-buttons { width: 100%; gap: 10px; }
+	.hero-buttons { grid-row: 6; width: 100%; gap: 10px; }
 	.hero-buttons button, .hero-buttons a { min-height: 46px; padding: 12px 8px; font-size: 11px; }
-	.hero-right { width: min(235px, 76%); margin: 0 auto; }
 	.profile-frame { padding: 8px; }
-	.hero-note { left: -24px; bottom: 16px; padding: 10px 12px; font-size: 10px; }
+	.hero-note { left: -20px; bottom: 16px; padding: 10px 12px; font-size: 10px; }
 	.hero-note strong { font-size: 17px; }
 	.About, .Projects, .Certificates, .Contact { min-height: 100svh; padding: 82px 22px 52px; }
 	.About-Content { gap: 26px; }
