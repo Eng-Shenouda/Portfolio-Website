@@ -40,3 +40,50 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 .hero-right img.profile { display: block; width: 100%; height: auto; aspect-ratio: auto; object-fit: initial; object-position: center; transform: none; clip-path: none; filter: none; }
 .hero-note { left: -28px; bottom: 24px; padding: 14px 18px; background: var(--ink); color: var(--paper); border: 1px solid var(--ink); border-left: 3px solid var(--lime); box-shadow: 0 12px 28px rgba(23, 35, 29, .16); transform: none; }
 .hero-note strong { color: var(--lime); }
+@media (max-width: 600px) {
+	html { scroll-snap-type: y proximity; }
+	nav { top: 10px; width: calc(100% - 24px); padding: 9px 12px; }
+	.logo { gap: 8px; font-size: 13px; }
+	.logo span { width: 29px; height: 29px; }
+	.section-indicator { display: none; }
+	nav ul { top: calc(100% + 8px); border-radius: 4px; box-shadow: 0 12px 28px rgba(23, 35, 29, .1); }
+	.hero { min-height: 100svh; padding: 112px 22px 46px; flex-direction: column; align-items: stretch; gap: 26px; }
+	.hero-left { max-width: none; }
+	.hero-left .eyebrow { margin-bottom: 16px; }
+	.hero .title { font-size: 40px; line-height: 1.02; }
+	.hero .subtitle { margin-top: 18px; font-size: 14px; line-height: 1.65; }
+	.hero-icons { width: 100%; max-width: 350px; margin: 24px 0 22px; gap: 12px; }
+	.hero-icons a { font-size: 20px; }
+	.hero-buttons { width: 100%; gap: 10px; }
+	.hero-buttons button, .hero-buttons a { min-height: 46px; padding: 12px 8px; font-size: 11px; }
+	.hero-right { width: min(235px, 76%); margin: 0 auto; }
+	.profile-frame { padding: 8px; }
+	.hero-note { left: -24px; bottom: 16px; padding: 10px 12px; font-size: 10px; }
+	.hero-note strong { font-size: 17px; }
+	.About, .Projects, .Certificates, .Contact { min-height: 100svh; padding: 82px 22px 52px; }
+	.About-Content { gap: 26px; }
+	.About .Left { display: block; }
+	.About .Left img { width: min(100%, 230px); margin: 0 auto; }
+	.About .Right .title h1, .projects-header h1, .certificates-content h1 { font-size: 38px; line-height: 1.02; }
+	.About .details { margin-top: 24px; }
+	.About .details h2 { font-size: 19px; }
+	.About .details p { font-size: 14px; line-height: 1.75; }
+	.projects-header, .certificates-content { align-items: center; gap: 12px; margin-bottom: 26px; }
+	.see-all { flex: 0 0 auto; padding: 8px 10px; font-size: 10px; }
+	.container { display: flex; width: 100%; flex-direction: column; gap: 12px; overflow: visible; padding: 0; }
+	.card { flex: none; width: 100%; min-height: 0; padding: 22px; }
+	.card small { margin-bottom: 22px; }
+	.card h2 { font-size: 20px; }
+	.card p { font-size: 13px; }
+	.projects-content.see-all-active .container { display: grid; grid-template-columns: 1fr; }
+	.image-links { width: calc(100% + 22px); gap: 12px; }
+	.image-links a { flex-basis: min(250px, 76vw); }
+	.image-links.see-all-active { display: grid; width: 100%; grid-template-columns: 1fr; }
+	.image-links.see-all-active a { aspect-ratio: 1/1.15; }
+	.Contact { gap: 28px; }
+	.contact-heading h1 { font-size: 42px; }
+	.contact-form { gap: 12px; }
+	.contact-form input, .contact-form textarea { padding: 15px; font-size: 14px; }
+	.contact-form button { min-height: 46px; }
+	.Contact > footer { margin-top: 16px; gap: 12px; }
+}
