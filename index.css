@@ -54,7 +54,7 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 	.hero .title { grid-row: 2; font-size: 40px; line-height: 1.02; }
 	.hero .subtitle { grid-row: 3; margin-top: 12px; font-size: 14px; line-height: 1.65; }
 	.hero-right { grid-row: 4; width: min(210px, 70vw); margin: 18px auto 14px; }
-	.hero-icons { grid-row: 5; width: 100%; max-width: 350px; margin: 8px 0 18px; gap: 12px; }
+	.hero-icons { grid-row: 5; width: 100%; max-width: none; margin: 8px 0 18px; gap: 24px; justify-content: space-between; }
 	.hero-icons a { font-size: 20px; }
 	.hero-buttons { grid-row: 6; width: 100%; gap: 10px; }
 	.hero-buttons button, .hero-buttons a { min-height: 46px; padding: 12px 8px; font-size: 11px; }
