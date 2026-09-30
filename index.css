@@ -75,12 +75,12 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 	.see-all { flex: 0 0 auto; padding: 8px 10px; font-size: 10px; }
 	.Projects { display: flex; flex-direction: column; }
 	.projects-content { display: flex; flex: 1; min-height: 0; flex-direction: column; }
-	.container { display: flex; flex: 1; min-height: 0; width: calc(100% + 22px); flex-direction: row; align-items: stretch; gap: 12px; overflow-x: auto; overflow-y: hidden; padding: 0 22px 14px 0; scroll-snap-type: x mandatory; }
-	.card { flex: 0 0 86%; width: auto; height: 100%; min-height: 0; padding: 22px; }
+	.container { display: grid; flex: 0 0 auto; width: calc(100% + 22px); grid-auto-flow: column; grid-auto-columns: 86%; grid-template-rows: max-content; align-items: stretch; gap: 12px; overflow-x: auto; overflow-y: hidden; padding: 0 22px 14px 0; scroll-snap-type: x mandatory; }
+	.card { width: auto; height: auto; min-height: 0; padding: 22px; }
 	.card small { margin-bottom: 22px; }
 	.card h2 { font-size: 20px; }
 	.card p { font-size: 13px; }
-	.projects-content.see-all-active .container { display: grid; flex: 1; width: 100%; grid-template-columns: 1fr; overflow: visible; padding: 0 4px 12px 0; }
+	.projects-content.see-all-active .container { display: grid; flex: 1; width: 100%; grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: 1fr; grid-template-rows: auto; overflow: visible; padding: 0 4px 12px 0; }
 	.projects-content.see-all-active .card { height: auto; min-height: 190px; }
 	.image-links { width: calc(100% + 22px); gap: 12px; }
 	.image-links a { flex-basis: min(250px, 76vw); }
