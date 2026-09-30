@@ -218,6 +218,7 @@ if (seeAllProjectsBtn) {
     const container = projectsSection.querySelector('.container');
     container.classList.toggle('see-all-active');
     projectsContent.classList.toggle('see-all-active');
+    seeAllProjectsBtn.classList.toggle('active');
   });
 }
 

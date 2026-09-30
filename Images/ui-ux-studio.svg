@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">UI/UX design studio artwork</title>
+  <desc id="desc">An abstract interface design workspace with wireframes, cards, and a cursor.</desc>
+  <rect width="800" height="1000" fill="#17231d"/>
+  <circle cx="665" cy="135" r="145" fill="#ff755d"/>
+  <circle cx="665" cy="135" r="92" fill="#c8f264"/>
+  <path d="M0 820L800 530V1000H0Z" fill="#23332a"/>
+  <g transform="translate(82 108) rotate(-5 300 340)">
+    <rect width="585" height="710" rx="6" fill="#f5f4ef"/>
+    <rect width="585" height="58" rx="6" fill="#d9ddd5"/>
+    <circle cx="29" cy="29" r="7" fill="#ff755d"/>
+    <circle cx="53" cy="29" r="7" fill="#c8f264"/>
+    <circle cx="77" cy="29" r="7" fill="#17231d"/>
+    <rect x="36" y="102" width="226" height="22" rx="4" fill="#17231d"/>
+    <rect x="36" y="144" width="332" height="11" rx="3" fill="#aab4ac"/>
+    <rect x="36" y="166" width="275" height="11" rx="3" fill="#aab4ac"/>
+    <rect x="36" y="211" width="168" height="46" rx="4" fill="#c8f264"/>
+    <rect x="220" y="211" width="120" height="46" rx="4" fill="#17231d"/>
+    <rect x="36" y="310" width="242" height="218" rx="5" fill="#17231d"/>
+    <rect x="300" y="310" width="249" height="102" rx="5" fill="#ff755d"/>
+    <rect x="300" y="430" width="116" height="98" rx="5" fill="#d9ddd5"/>
+    <rect x="433" y="430" width="116" height="98" rx="5" fill="#c8f264"/>
+    <path d="M89 455L135 350L183 455Z" fill="#c8f264"/>
+    <circle cx="165" cy="385" r="30" fill="#ff755d"/>
+    <rect x="36" y="580" width="180" height="13" rx="3" fill="#17231d"/>
+    <rect x="36" y="606" width="380" height="9" rx="3" fill="#aab4ac"/>
+    <rect x="36" y="625" width="270" height="9" rx="3" fill="#aab4ac"/>
+  </g>
+  <path d="M555 715L635 820L672 772L715 850L751 830L708 752L770 746Z" fill="#f5f4ef" stroke="#17231d" stroke-width="12" stroke-linejoin="round"/>
+  <text x="54" y="930" fill="#f5f4ef" font-family="monospace" font-size="22" letter-spacing="5">MAKE / TEST / REFINE</text>
+</svg>
