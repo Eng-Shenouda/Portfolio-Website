@@ -216,9 +216,11 @@ if (seeAllProjectsBtn) {
   seeAllProjectsBtn.addEventListener('click', function() {
     const projectsContent = projectsSection.querySelector('.projects-content');
     const container = projectsSection.querySelector('.container');
-    container.classList.toggle('see-all-active');
-    projectsContent.classList.toggle('see-all-active');
-    seeAllProjectsBtn.classList.toggle('active');
+    const isExpanded = projectsContent.classList.toggle('see-all-active');
+    container.classList.toggle('see-all-active', isExpanded);
+    seeAllProjectsBtn.classList.toggle('active', isExpanded);
+    seeAllProjectsBtn.setAttribute('aria-expanded', String(isExpanded));
+    seeAllProjectsBtn.textContent = isExpanded ? 'Show Less' : 'See All';
   });
 }
 

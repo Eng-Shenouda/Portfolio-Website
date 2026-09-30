@@ -17,7 +17,7 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 .hero-buttons { display: flex; width: min(100%, 480px); gap: 12px; align-items: center; } .hero-buttons button, .hero-buttons a { flex: 1; border: 1px solid var(--ink); padding: 14px 20px; font: 700 12px 'Manrope', sans-serif; text-decoration: none; cursor: pointer; border-radius: 3px; transition: .25s; text-align: center; } .hero-buttons button { background: var(--ink); color: var(--paper); } .hero-buttons a { color: var(--ink); } .hero-buttons button:hover { background: var(--coral); border-color: var(--coral); } .hero-buttons a:hover { background: var(--lime); }
 .hero-right { position: relative; display: flex; justify-content: center; } .profile-frame { width: min(390px, 100%); padding: 13px; background: var(--lime); transform: rotate(3deg); position: relative; } .profile-frame::before { content: ''; position: absolute; inset: -9px 9px 9px -9px; border: 1px solid var(--ink); z-index: -1; } .hero-right img.profile { display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; } .hero-note { position: absolute; z-index: 2; bottom: 25px; left: -42px; display: flex; gap: 10px; align-items: center; background: var(--ink); color: var(--paper); padding: 14px; font-size: 11px; line-height: 1.4; transform: rotate(-5deg); } .hero-note strong { color: var(--lime); font: 20px 'DM Mono', monospace; }
 .About { padding: 150px max(24px, calc((100% - 1120px) / 2)) 170px; background: var(--dark); color: var(--paper); } .About-Content { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: 110px; } .About .Left img { width: 100%; max-width: 400px; aspect-ratio: 1/1.1; object-fit: cover; } .About .Right .eyebrow { color: #aab4ac; } .About .Right .title h1 { font-size: clamp(40px, 5vw, 70px); letter-spacing: -.07em; line-height: 1; } .About .highlight2, .About .highlight3 { color: var(--lime); } .About .details { margin-top: 35px; max-width: 590px; } .About .details h2 { font-size: 22px; margin-bottom: 18px; } .About .details p { color: #aab4ac; line-height: 1.9; font-size: 15px; }
-.Projects, .Certificates { padding: 145px max(24px, calc((100% - 1120px) / 2)); } .Projects { background: var(--paper); } .projects-content { width: 100%; } .projects-header, .certificates-content { display: flex; align-items: end; justify-content: space-between; margin-bottom: 50px; } .projects-header h1, .certificates-content h1 { font-size: clamp(40px, 5vw, 68px); line-height: .95; letter-spacing: -.07em; } .highlight4 { color: var(--coral); } .see-all { color: var(--muted); font: 500 11px 'DM Mono', monospace; text-transform: uppercase; cursor: pointer; border: 1px solid transparent; padding: 9px 12px; transition: color .25s, background-color .25s, border-color .25s; } .see-all:hover { color: var(--coral); border-color: var(--coral); } .see-all.active { color: var(--ink); background: var(--lime); border-color: var(--lime); }
+.Projects, .Certificates { padding: 145px max(24px, calc((100% - 1120px) / 2)); } .Projects { background: var(--paper); } .projects-content { width: 100%; } .projects-header, .certificates-content { display: flex; align-items: end; justify-content: space-between; margin-bottom: 50px; } .projects-header h1, .certificates-content h1 { font-size: clamp(40px, 5vw, 68px); line-height: .95; letter-spacing: -.07em; } .highlight4 { color: var(--coral); } .see-all { color: var(--muted); background: transparent; font: 500 11px 'DM Mono', monospace; text-transform: uppercase; cursor: pointer; border: 1px solid transparent; padding: 9px 12px; transition: color .25s, background-color .25s, border-color .25s; } .see-all:hover { color: var(--coral); border-color: var(--coral); } .see-all.active { color: var(--ink); background: var(--lime); border-color: var(--lime); }
 .container { display: flex; width: calc(100% + max(24px, calc((100vw - 1120px) / 2))); gap: 16px; overflow-x: auto; overflow-y: visible; padding: 8px 8px 18px 0; scroll-snap-type: x mandatory; scrollbar-color: var(--coral) transparent; scrollbar-width: thin; } .card { flex: 0 0 min(520px, 78vw); min-height: 280px; padding: 30px; border: 1px solid var(--line); text-decoration: none; color: var(--ink); display: flex; flex-direction: column; justify-content: flex-start; position: relative; overflow: hidden; transition: .3s; scroll-snap-align: start; } .card::before { content: '↗'; position: absolute; top: 26px; right: 28px; font-size: 24px; color: var(--coral); transition: .3s; } .card small { color: var(--coral); font: 500 11px 'DM Mono', monospace; text-transform: uppercase; margin-bottom: 28px; padding-right: 42px; } .card h2 { font-size: 24px; letter-spacing: -.05em; margin-bottom: 12px; } .card p { color: var(--muted); font-size: 13px; line-height: 1.7; max-width: 470px; } .card:hover { background: var(--lime); border-color: var(--lime); transform: translateY(-6px); box-shadow: 8px 8px 0 var(--ink); } .card:hover::before { color: var(--ink); transform: translate(4px, -4px); }
 .Certificates { background: #e7e9e3; } .image-links { display: flex; width: calc(100% + max(24px, calc((100vw - 1120px) / 2))); gap: 14px; overflow-x: auto; padding: 8px 8px 18px 0; scroll-snap-type: x mandatory; scrollbar-color: var(--coral) transparent; scrollbar-width: thin; } .image-links a { flex: 0 0 min(280px, 72vw); aspect-ratio: 1/1.25; overflow: hidden; display: grid; place-items: center; padding: 12px; background: var(--paper); border: 1px solid var(--line); scroll-snap-align: start; } .image-links img { width: 100%; height: 100%; object-fit: contain; transition: .4s; } .image-links a:hover img { transform: scale(1.04); filter: saturate(1.15); }
 .projects-content.see-all-active .container { display: grid; width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; } .projects-content.see-all-active .card { min-width: 0; }
@@ -42,6 +42,7 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 .hero-note strong { color: var(--lime); }
 @media (max-width: 600px) {
 	html { scroll-snap-type: y proximity; }
+	section { height: 100svh; min-height: 100svh; overflow-x: hidden; overflow-y: auto; }
 	nav { top: 10px; width: calc(100% - 24px); padding: 9px 12px; }
 	.logo { gap: 8px; font-size: 13px; }
 	.logo span { width: 29px; height: 29px; }
@@ -60,27 +61,32 @@ section { min-height: 100vh; scroll-margin-top: 0; scroll-snap-align: start; scr
 	.profile-frame { padding: 8px; }
 	.hero-note { left: -20px; bottom: 16px; padding: 10px 12px; font-size: 10px; }
 	.hero-note strong { font-size: 17px; }
-	.About, .Projects, .Certificates, .Contact { min-height: 100svh; padding: 82px 22px 52px; }
-	.About-Content { gap: 26px; }
-	.About .Left { display: block; }
-	.About .Left img { width: min(100%, 230px); margin: 0 auto; }
+	.About, .Projects, .Certificates, .Contact { height: 100svh; min-height: 100svh; padding: 78px 22px 24px; }
+	.About { padding: 78px 0 22px; }
+	.About-Content { grid-template-columns: minmax(0, 1fr); grid-template-rows: 170px auto; gap: 20px; align-content: start; }
+	.About .Left { display: block; grid-column: 1; position: relative; width: 100%; height: 170px; margin: 0; overflow: hidden; }
+	.About .Left img { display: block; width: 100%; max-width: none; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: center 45%; }
+	.About .Right { padding: 0 22px; }
 	.About .Right .title h1, .projects-header h1, .certificates-content h1 { font-size: 38px; line-height: 1.02; }
 	.About .details { margin-top: 24px; }
 	.About .details h2 { font-size: 19px; }
 	.About .details p { font-size: 14px; line-height: 1.75; }
-	.projects-header, .certificates-content { align-items: center; gap: 12px; margin-bottom: 26px; }
+	.projects-header, .certificates-content { align-items: center; gap: 12px; margin-bottom: 20px; }
 	.see-all { flex: 0 0 auto; padding: 8px 10px; font-size: 10px; }
-	.container { display: flex; width: 100%; flex-direction: column; gap: 12px; overflow: visible; padding: 0; }
-	.card { flex: none; width: 100%; min-height: 0; padding: 22px; }
+	.Projects { display: flex; flex-direction: column; }
+	.projects-content { display: flex; flex: 1; min-height: 0; flex-direction: column; }
+	.container { display: flex; flex: 1; min-height: 0; width: calc(100% + 22px); flex-direction: row; align-items: stretch; gap: 12px; overflow-x: auto; overflow-y: hidden; padding: 0 22px 14px 0; scroll-snap-type: x mandatory; }
+	.card { flex: 0 0 86%; width: auto; height: 100%; min-height: 0; padding: 22px; }
 	.card small { margin-bottom: 22px; }
 	.card h2 { font-size: 20px; }
 	.card p { font-size: 13px; }
-	.projects-content.see-all-active .container { display: grid; grid-template-columns: 1fr; }
+	.projects-content.see-all-active .container { display: grid; flex: 1; width: 100%; grid-template-columns: 1fr; overflow-x: hidden; overflow-y: auto; padding: 0 4px 12px 0; }
+	.projects-content.see-all-active .card { height: auto; min-height: 190px; }
 	.image-links { width: calc(100% + 22px); gap: 12px; }
 	.image-links a { flex-basis: min(250px, 76vw); }
 	.image-links.see-all-active { display: grid; width: 100%; grid-template-columns: 1fr; }
 	.image-links.see-all-active a { aspect-ratio: 1/1.15; }
-	.Contact { gap: 28px; }
+	.Contact { gap: 20px; padding-bottom: 12px; }
 	.contact-heading h1 { font-size: 42px; }
 	.contact-form { gap: 12px; }
 	.contact-form input, .contact-form textarea { padding: 15px; font-size: 14px; }
