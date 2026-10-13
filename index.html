@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shenouda Romany | AI Automation Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a class="logo" href="#home"><b>&gt;</b> shenouda<span class="l2">.automate()</span></a>
+  <ul id="menu"><li><a href="#projects">projects</a></li><li><a href="#stack">stack</a></li><li><a href="#about">about</a></li><li><a href="#certificates">certificates</a></li><li><a href="#contact">contact</a></li></ul>
+  <div class="status"><span class="dot"></span>workflows running</div>
+  <span class="sec-name" id="secName" aria-live="polite">home</span>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+</nav>
+
+<section id="home" class="hero">
+  <div class="wrap">
+    <div>
+      <img class="av" src="Images/Profile.jpeg" alt="Shenouda Romany"><p class="tag">// AI AUTOMATION ENGINEER</p>
+      <h1>I build systems that <span class="grad">work while you sleep.</span></h1>
+      <p class="lead">I'm Shenouda Romany. I connect APIs, AI and business tools into automated workflows that remove manual work, from the first webhook to the final Slack alert.</p>
+      <div class="btns">
+        <a class="btn main" href="#projects">View Workflows</a>
+        <a class="btn" href="Download CV/My CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+
+    <div class="canvas rv">
+      <div class="bar"><i></i><i></i><i></i><span>order-alert.workflow</span></div>
+      <svg viewBox="0 0 440 210">
+        <defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#5cffb0"/><stop offset="1" stop-color="#8b7cff"/></linearGradient></defs>
+        <g fill="none" stroke="url(#lg)" stroke-width="2">
+          <path class="flow" d="M100 60 C130 60 130 60 150 60"/><path class="flow" d="M250 60 C290 60 290 60 320 60"/>
+          <path class="flow" d="M70 84 C70 130 100 150 150 150"/><path class="flow" d="M250 150 C290 150 290 100 340 84"/>
+        </g>
+        <g fill="#5cffb0">
+          <circle r="3.5"><animateMotion dur="1.8s" repeatCount="indefinite" path="M100 60 C130 60 130 60 150 60"/></circle>
+          <circle r="3.5" fill="#8b7cff"><animateMotion dur="1.8s" begin=".9s" repeatCount="indefinite" path="M250 60 C290 60 290 60 320 60"/></circle>
+          <circle r="3.5"><animateMotion dur="2.2s" begin=".45s" repeatCount="indefinite" path="M70 84 C70 130 100 150 150 150"/></circle>
+          <circle r="3.5" fill="#8b7cff"><animateMotion dur="2.2s" begin="1.35s" repeatCount="indefinite" path="M250 150 C290 150 290 100 340 84"/></circle>
+        </g>
+        <g class="node"><rect x="20" y="36" width="80" height="48" rx="10"/><text x="34" y="58">Webhook</text><text class="s" x="34" y="73">POST /order</text></g>
+        <g class="node"><rect x="150" y="36" width="100" height="48" rx="10"/><text x="164" y="58">AI Agent</text><text class="s" x="164" y="73">validate + enrich</text></g>
+        <g class="node"><rect x="320" y="36" width="100" height="48" rx="10"/><text x="334" y="58">Slack</text><text class="s" x="334" y="73">#order-alerts</text></g>
+        <g class="node"><rect x="150" y="126" width="100" height="48" rx="10"/><text x="164" y="148">G-Sheets</text><text class="s" x="164" y="163">append row</text></g>
+      </svg>
+      <div class="log" id="log"></div>
+    </div>
+  </div>
+  <div class="wrap" style="display:block">
+    <div class="stats rv">
+      <div><strong>n8n</strong><span>primary platform</span></div>
+      <div><strong>2</strong><span>production-style workflows</span></div>
+      <div><strong>24/7</strong><span>hands-free execution</span></div>
+      <div><strong>0</strong><span>manual copy-paste</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="tag">// 01 SELECTED WORKFLOWS</p>
+    <h2>Automations that <span class="grad">ship.</span></h2>
+    <p class="sub">Real pipelines built to be handed over to businesses, with clean data, clear alerts and no babysitting.</p>
+    <div class="grid" data-collapse data-hscroll data-d="4" data-m="3" data-label="projects">
+      <a class="card rv" href="https://github.com/Eng-Shenouda">
+        <div class="n">WORKFLOW 04</div>
+        <h3>New Order Operations Alert</h3>
+        <p>A store sends an order to a webhook. It is logged in Google Sheets, the team gets an instant Slack alert, and the customer and owner receive automatic emails.</p>
+        <div class="chain"><span>Webhook</span><i>→</i><span>Google Sheets</span><i>→</i><span>Slack</span><i>→</i><span>Email</span></div>
+        <div class="chips"><span>n8n Cloud</span><span>Slack API</span><span>Sheets</span><span>Auth flow</span></div>
+      </a>
+      <a class="card rv" href="https://github.com/Eng-Shenouda/supplier-intake" target="_blank" rel="noopener">
+        <div class="n">WORKFLOW 03</div>
+        <h3>Supplier Document Intake</h3>
+        <p>Suppliers submit their details and documents through one link. Files land in Google Drive and every field is recorded in the Suppliers Management sheet.</p>
+        <div class="chain"><span>Web Form</span><i>→</i><span>Webhook</span><i>→</i><span>Drive</span><i>→</i><span>Sheets</span></div>
+        <div class="chips"><span>n8n</span><span>Google Drive</span><span>GitHub Pages</span></div>
+      </a>
+      <a href="https://github.com/Eng-Shenouda/Egyptian-House-Price-Predictor-Project" class="card rv" target="_blank" rel="noopener"><div class="n">01 / FULL-STACK · AI</div><h3>Egyptian House Price Predictor</h3><p>A smart real estate price prediction web app built with React and Flask.</p><div class="chips"><span>React</span><span>Flask</span><span>JavaScript</span></div></a>
+      <a href="https://github.com/Eng-Shenouda/_IMS_Inventory_Management_System" class="card rv" target="_blank" rel="noopener"><div class="n">02 / PYTHON</div><h3>Inventory Management System</h3><p>A professional Inventory Management System built with Python and Tkinter. Features a secure SQL Server backend, a real-time analytics dashboard and automated billing with OTP-based password recovery (forked and extended).</p><div class="chips"><span>Python</span><span>Tkinter</span><span>SQL Server</span><span>Fork</span></div></a>
+      <a href="https://github.com/Eng-Shenouda/Restaurant-Management-System-Java" class="card rv" target="_blank" rel="noopener"><div class="n">03 / JAVA</div><h3>Restaurant Management System</h3><p>A mini restaurant order management application developed using Java and the Swing library for Graphical User Interface (GUI). It allows users to calculate costs, apply taxes, and save detailed invoices to a text file (Group Project).</p><div class="chips"><span>Java</span><span>Swing</span><span>Group project</span></div></a>
+      <a href="https://github.com/Eng-Shenouda/Hospital_Management_System" class="card rv" target="_blank" rel="noopener"><div class="n">04 / C++</div><h3>Hospital Management System</h3><p>A simple Hospital Management System developed in C++ using file handling concepts. This project allows managing patient records efficiently without using a database system.</p><div class="chips"><span>C++</span><span>File handling</span></div></a>
+      <a href="https://github.com/Eng-Shenouda/Data_Structure_Simulator" class="card rv" target="_blank" rel="noopener"><div class="n">05 / C++</div><h3>Data Structure Simulator</h3><p>Implementations of common Data Structures in C++: Stack, Queue, Array, and Linked List. This project demonstrates basic operations and usage of these data structures.</p><div class="chips"><span>C++</span><span>DSA</span></div></a>
+      <a href="https://github.com/Eng-Shenouda/Portfolio-Website" class="card rv" target="_blank" rel="noopener"><div class="n">06 / WEB DESIGN</div><h3>Portfolio Website</h3><p>A personal portfolio built with HTML, CSS and JavaScript. I first designed the wireframe on Figma to establish the layout and user flow, then chose colors, spacing and typography, and implemented it as a responsive website with interactive UI and a certificates gallery.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span></div></a>
+      <a href="https://github.com/Eng-Shenouda/UI-UX-Design-Basic-_-Course-Screens-_" class="card rv" target="_blank" rel="noopener"><div class="n">07 / UI·UX</div><h3>UI/UX Design Basics</h3><p>Beginner-level UI design exercises completed as part of a Figma fundamentals course, with exported screens and a viewer link to the original Figma file.</p><div class="chips"><span>Figma</span><span>UI design</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <p class="tag">// 02 TOOLBOX</p>
+    <h2>The <span class="grad">stack.</span></h2>
+    <p class="sub">Tools I use to make systems talk to each other.</p>
+    <div class="stack rv" data-collapse data-m="4" data-label="tools">
+      <div><i class="fas fa-diagram-project"></i><b>n8n</b><span>workflow engine</span></div>
+      <div><i class="fas fa-robot"></i><b>AI Agents</b><span>LLM + tools</span></div>
+      <div><i class="fas fa-plug"></i><b>APIs &amp; Webhooks</b><span>REST / JSON</span></div>
+      <div><i class="fab fa-google-drive"></i><b>Google Workspace</b><span>Sheets, Drive, Gmail</span></div>
+      <div><i class="fab fa-slack"></i><b>Slack</b><span>team alerts</span></div>
+      <div><i class="fab fa-js"></i><b>JavaScript</b><span>logic and forms</span></div>
+      <div><i class="fas fa-code"></i><b>C++ / Java</b><span>core engineering</span></div>
+      <div><i class="fab fa-github"></i><b>Git &amp; GitHub</b><span>version and hosting</span></div>
+    </div>
+    <div style="height:70px"></div>
+    <p class="tag">// HOW I WORK</p>
+    <div class="steps rv">
+      <div><b>Map</b><p>Find the repetitive manual process worth removing.</p></div>
+      <div><b>Connect</b><p>Link triggers, APIs, AI and apps together.</p></div>
+      <div><b>Harden</b><p>Test edge cases, errors and data quality.</p></div>
+      <div><b>Deliver</b><p>Hand over a clean, documented, working system.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="photo rv"><img src="Images/Profile.jpeg" alt="Shenouda Romany"></div>
+    <div class="rv">
+      <p class="tag">// 03 ABOUT</p>
+      <h2>Engineer by training, <span class="grad">automator by obsession.</span></h2>
+      <p>I'm a third-year student at the Faculty of Computers and Information (Information Technology and Computer Science), based in Ismailia, Egypt.</p>
+      <p>I learned C++, Java and frontend development at Sinai University, then found my real passion: automating business processes with n8n, APIs and AI.</p>
+      <p>My goal is simple: take the boring, repeated work off people's plates.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap">
+    <p class="tag">// 04 CERTIFICATES</p>
+    <h2>Always <span class="grad">learning.</span></h2>
+    <div class="certs" data-collapse data-hscroll data-d="6" data-m="4" data-label="certificates">
+      <a href="https://lnkd.in/p/e8v_6ypd" target="_blank" rel="noopener"><img src="Images/ITI Certificate.jpeg" alt="ITI - Cross-Platform Mobile App Development using Flutter (132 hours)"></a>
+      <a href="https://lnkd.in/p/e43nMkMA" target="_blank" rel="noopener"><img src="Images/Suez canal.jpg" alt="Suez Canal Authority - Summer Training 2026 evaluation"></a>
+      <a href="https://lnkd.in/p/e9h_X4fH" target="_blank" rel="noopener"><img src="Images/Graphic Design.png" alt="Graphic Design 42H - KAAF / Creativa"></a>
+      <a href="https://lnkd.in/p/eyX778F7" target="_blank" rel="noopener"><img src="Images/UI UX Basic.jpeg" alt="UI/UX Basic"></a>
+      <a href="https://lnkd.in/p/eTzQtuYn" target="_blank" rel="noopener"><img src="Images/UI UX Advanced.png" alt="UI/UX Advanced"></a>
+      <a href="https://lnkd.in/p/ec_T4vqB" target="_blank" rel="noopener"><img src="Images/Innovation and ideation.jpeg" alt="Innovation and Ideation"></a>
+      <a href="https://lnkd.in/p/epW5z_Gm" target="_blank" rel="noopener"><img src="Images/CCNA Network Fundmenal.png" alt="CCNA Network Fundamentals"></a>
+      <a href="#"><img src="Images/7kaitha b 2man.png" alt="Certificate"></a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div class="rv">
+      <p class="tag">// 05 CONTACT</p>
+      <h2>Got a process to <span class="grad">automate?</span></h2>
+      <p class="sub">Tell me what's slowing your team down and I'll build the workflow.</p>
+      <div style="width:fit-content;max-width:100%">
+      <p class="mono" style="color:var(--g);font-size:13px;word-break:break-all">xxelkingxx158@gmail.com</p>
+      <div class="socials" style="margin-top:22px;justify-content:space-between">
+        <a href="https://github.com/Eng-Shenouda" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shenouda-romany-zakrey-214491345" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/1MXBeyD5bp/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/xx_shenouda_romany_xx" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:xxelkingxx158@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      </div>
+    </div>
+    <form id="f" class="rv">
+      <div class="r"><input name="n" placeholder="Full name" required><input name="e" type="email" placeholder="Email" required></div>
+      <input name="s" placeholder="What do you want to automate?">
+      <textarea name="m" placeholder="Describe your workflow..." required></textarea>
+      <button class="btn main" type="submit">Send Message →</button>
+    </form>
+  </div>
+</section>
+
+<footer><div class="wrap"><span><i class="fas fa-gear spin" aria-hidden="true"></i>Built to run itself.</span><span>© 2026 Shenouda Romany</span><a href="#home">Back to top ↑</a></div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <button class="x" aria-label="Close"><i class="fas fa-xmark"></i></button>
+  <button class="p" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <img alt="">
+  <button class="nx" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  <div class="cnt"><span></span><a target="_blank" rel="noopener" hidden>Open link</a></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
